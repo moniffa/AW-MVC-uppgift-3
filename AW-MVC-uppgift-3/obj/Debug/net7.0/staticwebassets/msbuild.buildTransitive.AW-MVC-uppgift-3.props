@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\AW-MVC-uppgift-3.props" />
-</Project>
