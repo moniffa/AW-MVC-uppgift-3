@@ -2,7 +2,10 @@
 {
     public class ProducsService
     {
-        static List<Employee> employees = new List<Employee>() { };
+        static List<Employee> employees = new List<Employee>() {
+            new Employee { Id = 1, Name = "John", Email = "john@mail.com" },
+            new Employee { Id = 2, Name = "Mary", Email = "mary@mail.com" },
+            new Employee { Id = 3, Name = "Sam", Email = "sam@mail.com" } };
 
 
 
