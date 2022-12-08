@@ -362,3 +362,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/AW-MVC-uppgift-3/DataStorage/EmployeesDataSet.json
