@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AW-MVC-uppgift-3.props" />
+</Project>

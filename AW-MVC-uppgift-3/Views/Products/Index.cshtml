@@ -1,7 +1,7 @@
 ﻿@using System.Globalization;
-@using ACME.Models;
+@using AW_MVC_uppgift_3.Models;
 
-@model Product[]
+@model Employee[]
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,12 +16,12 @@
         @{
             foreach(var product in Model)
             {
-                <li id="@product.Id">
-                    @product.Make @product.Model
-                    <ul>
-                        <li>@product.Price.ToString("C", new CultureInfo("sv-SE"))</li>
-                    </ul>
-                </li>
+                //<li id="@product.Id">
+                //    @product.Make @product.Model
+                //    <ul>
+                //        <li>@product.Price.ToString("C", new CultureInfo("sv-SE"))</li>
+                //    </ul>
+                //</li>
             }
         }
     </ul>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "AW-MVC-uppgift-3/1.0.0": {
+        "runtime": {
+          "AW-MVC-uppgift-3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AW-MVC-uppgift-3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
