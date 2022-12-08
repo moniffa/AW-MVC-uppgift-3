@@ -1,0 +1,33 @@
+﻿@using System.Globalization;
+@using ACME.Models;
+
+@model Product[]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <title>My Title</title>
+</head>
+<body>
+    <h1>
+        I have a problem with the following code:
+    </h1>
+    <ul>
+        @{
+            foreach(var product in Model)
+            {
+                <li id="@product.Id">
+                    @product.Make @product.Model
+                    <ul>
+                        <li>@product.Price.ToString("C", new CultureInfo("sv-SE"))</li>
+                    </ul>
+                </li>
+            }
+        }
+    </ul>
+
+</body>
+</html>
+
+
+
