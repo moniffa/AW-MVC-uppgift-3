@@ -7,4 +7,10 @@
     <RootNamespace>AW_MVC_uppgift_3</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Update="DataStorage\EmployeesDataSet.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

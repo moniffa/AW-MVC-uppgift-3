@@ -26,3 +26,4 @@ C:\Users\jocka\source\repos\AW-MVC-uppgift-3\AW-MVC-uppgift-3\obj\Debug\net7.0\r
 C:\Users\jocka\source\repos\AW-MVC-uppgift-3\AW-MVC-uppgift-3\obj\Debug\net7.0\AW-MVC-uppgift-3.pdb
 C:\Users\jocka\source\repos\AW-MVC-uppgift-3\AW-MVC-uppgift-3\obj\Debug\net7.0\AW-MVC-uppgift-3.genruntimeconfig.cache
 C:\Users\jocka\source\repos\AW-MVC-uppgift-3\AW-MVC-uppgift-3\obj\Debug\net7.0\ref\AW-MVC-uppgift-3.dll
+C:\Users\jocka\source\repos\AW-MVC-uppgift-3\AW-MVC-uppgift-3\bin\Debug\net7.0\DataStorage\EmployeesDataSet.json

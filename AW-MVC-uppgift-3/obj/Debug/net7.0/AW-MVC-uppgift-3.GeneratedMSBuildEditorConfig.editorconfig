@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\jocka\source\repos\AW-MVC-uppgift-3\AW-MVC-uppgift-3
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/jocka/source/repos/AW-MVC-uppgift-3/AW-MVC-uppgift-3/Views/Products/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+[C:/Users/jocka/source/repos/AW-MVC-uppgift-3/AW-MVC-uppgift-3/Views/Employees/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jocka/source/repos/AW-MVC-uppgift-3/AW-MVC-uppgift-3/Views/Employees/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jocka/source/repos/AW-MVC-uppgift-3/AW-MVC-uppgift-3/Views/Employees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
