@@ -59,9 +59,9 @@ namespace AW_MVC_uppgift_3.Models
             return employees
                 .FirstOrDefault(e => e.Id == id);
         }
-        public void Delete(Employee employee)
+        public void Delete(int id)
         {
-            var index = employees.FindIndex(x => x.Id == employee.Id);
+            var index = employees.FindIndex(x => x.Id == id);
             employees.RemoveAt(index);
             saveToDisk();
         }

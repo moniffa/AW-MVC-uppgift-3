@@ -39,6 +39,13 @@ namespace ACME.Controllers
             var employee = service.GetById(id);
             return View(employee);
         }
+        [HttpPost("dogs/delete/")]
+        public IActionResult Delete(int id)
+        {
+
+            service.Delete(id);
+            return RedirectToAction(nameof(Index));
+        }
 
     }
 }
