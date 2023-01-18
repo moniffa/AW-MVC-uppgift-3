@@ -1,69 +1,52 @@
-﻿using System.Text.Json;
+﻿using AW_MVC_uppgift_3.Models.Entities;
+using System.Text.Json;
+using System.Linq;
+using AW_MVC_uppgift_3.Views.Employees;
 
 namespace AW_MVC_uppgift_3.Models
 {
     public class DataService
     {
-        static List<Employee> employees;
+        //List<Employee> employees;
 
         string path = Environment.CurrentDirectory + @"\DataStorage\EmployeesDataSet.json";
+        private readonly EmployeeContext context;
 
-        public DataService()
+        public DataService(EmployeeContext context)
         {
-            if(employees == null)
-            {
-                try
-                {
-
-
-                    string jsonString = File.ReadAllText(path);
-                    Employee[]? storedData = JsonSerializer.Deserialize<Employee[]>(jsonString);
-                    if(storedData != null)
-                    {
-                        employees = storedData.ToList();
-
-                    }
-                    else
-                    {
-                        employees = new List<Employee>();
-                    }
-                }
-                catch
-                {
-                    employees = new List<Employee>();
-                    saveToDisk();
-                }
-            }
+            this.context = context;
         }
 
-        void saveToDisk()
-        {
-            string jsonString = JsonSerializer.Serialize(employees);
-            File.WriteAllText(path, jsonString);
-        }
-        public Employee[] GetAll()
+        public IndexVM[] GetAll()
         {
 
-            return employees
+            return context.Employees
+                .Select(e => new IndexVM() { Email = e.Email, Name = e.Name, ID = e.Id, ShowAsHighlighted = e.Email.ToLower().StartsWith("admin")})
                 .ToArray();
+            
         }
-        public void Add(Employee employee)
+        public void Add(CreateVM employee)
         {
-            employee.Id = employees.Max(e => e.Id) + 1;
-            employees.Add(employee);
-            saveToDisk();
+            Employee e = new Employee();    
+            e.Name = employee.Name;
+            e.Email = employee.Email;  
+            context.Employees.Add(e);
+            
+            context.SaveChanges();
+            
         }
 
         public Employee? GetById(int id)
         {
-            return employees
+            return context.Employees
                 .FirstOrDefault(e => e.Id == id);
         }
         public void Delete(int id)
         {
-            var index = employees.FindIndex(x => x.Id == id);
-            employees.RemoveAt(index);
-            saveToDisk();
+            var index = context.Employees.Find(id);
+            context.Employees.Remove(index);
+            
+            context.SaveChanges();
         }
 
     }

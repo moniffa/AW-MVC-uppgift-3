@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AW-MVC-uppgift-3", "AW-MVC-uppgift-3\AW-MVC-uppgift-3.csproj", "{A1F56E4C-57EF-4248-93BB-77E7BC76C171}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AW-MVC-uppgift-3", "AW-MVC-uppgift-3\AW-MVC-uppgift-3.csproj", "{A1F56E4C-57EF-4248-93BB-77E7BC76C171}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "EmployeesSQL", "EmployeesSQL\EmployeesSQL.sqlproj", "{20C741DB-E01D-4185-9939-488055B7D9B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,12 @@ Global
 		{A1F56E4C-57EF-4248-93BB-77E7BC76C171}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1F56E4C-57EF-4248-93BB-77E7BC76C171}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1F56E4C-57EF-4248-93BB-77E7BC76C171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C741DB-E01D-4185-9939-488055B7D9B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C741DB-E01D-4185-9939-488055B7D9B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C741DB-E01D-4185-9939-488055B7D9B5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{20C741DB-E01D-4185-9939-488055B7D9B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C741DB-E01D-4185-9939-488055B7D9B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C741DB-E01D-4185-9939-488055B7D9B5}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
